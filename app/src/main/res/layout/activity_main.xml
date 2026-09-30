@@ -14,8 +14,8 @@
         android:layout_height="wrap_content"
         android:text="Welcome Back"
         android:textSize="28sp"
-        android:textStyle="bold"
         android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
         android:layout_marginBottom="30dp"
         android:layout_marginTop="45dp"/>
 
@@ -35,10 +35,25 @@
         android:inputType="textPassword"
         android:layout_marginBottom="24dp" />
 
-    <Button
-        android:id="@+id/loginButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Log In" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Log In"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+    </LinearLayout>
 
 </LinearLayout>
